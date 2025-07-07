@@ -25,7 +25,6 @@ Traditional city infrastructure lacks automation and efficient resource usage. T
 ## 🏗️ Architecture Overview
 
 ### Devices Used:
-- SBC0 (Microcontroller)
 - Motion Sensor (IoT)
 - Photo Sensor (LDR equivalent)
 - Street Lamps (LED outputs)
@@ -44,23 +43,14 @@ Traditional city infrastructure lacks automation and efficient resource usage. T
 ## 🧰 Components Required
 | Component          | Quantity |
 |--------------------|----------|
-| SBC (Microcontroller) | 1      |
 | Motion Detector       | 1      |
-| Light Sensor / Photo Sensor | 1 |
-| Street Lamps (IoT LED) | 3–4   |
+| Siren                 | 1      |
 | IP Camera             | 1      |
 | Home Gateway          | 1      |
 | Tablet PC             | 1      |
 
 ---
 
-## 🔌 How It Works
-- **Python script** runs on SBC0 to handle sensor input.
-- Streetlight turns ON **only if**:
-  - It’s night (**light < threshold**)
-  - AND motion is detected
-- Camera remains ON and streams video feed to tablet via the gateway.
 
----
 
 
